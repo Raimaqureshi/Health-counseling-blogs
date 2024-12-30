@@ -1,36 +1,35 @@
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-gray-800 p-4 text-white">
-      {/* Parent div for small and large screen handling */}
-      <div className="flex flex-col sm:flex-row justify-between items-center">
-        {/* Navigation links */}
-        <ul className="flex flex-col sm:flex-row gap-3 sm:gap-5 mb-3 sm:mb-0">
+    <header className="bg-lime-200  ">
+      <div className="flex justify-between items-center">
+        <div className="ml-4">
+          <Image
+            src="/images/Health3.png"
+            alt="Health Counseling Hub Logo"
+            width={150}
+            height={50}
+            className="object-contain"
+            priority 
+          />
+        </div>
+        <ul className="flex gap-2 sm:gap-3 md:gap-7 lg:gap-5 xl:gap-8 text-sm sm:text-base md:text-lg lg:text-xl mr-4">
           <li>
-            <Link className="hover:text-gray-300" href="/">Home</Link>
+            <Link className="text-green-700 " href="/">Home</Link>
           </li>
           <li>
-            <Link className="hover:text-gray-300" href="/About">About</Link>
+            <Link className="text-green-700" href="/About">About</Link>
           </li>
           <li>
-            <Link className="hover:text-gray-300" href="/contact-us">Contact us</Link>
+            <Link className="text-green-700" href="/blogs">Blogs</Link>
           </li>
           <li>
-            <Link className="hover:text-gray-300" href="/Career">Career</Link>
-          </li>
-        </ul>
-
-        {/* Login and Signup links */}
-        <ul className="flex flex-col sm:flex-row gap-3 sm:gap-5">
-          <li>
-            <Link className="hover:text-gray-300" href="/login">Login</Link>
-          </li>
-          <li>
-            <Link className="hover:text-gray-300" href="/signup">Signup</Link>
+            <Link className="text-green-700" href="/contact">Contact</Link>
           </li>
         </ul>
       </div>
     </header>
-  )
+  );
 }
