@@ -1,4 +1,6 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
+import CommentSection from "@/components/CommentSection";
 
 type ContentSection =
   | { type: "paragraph"; text: string }
@@ -1752,19 +1754,20 @@ export function generateStaticParams() {
   }));
 }
 
-import Image from "next/image";
-import CommentSection from "@/components/CommentSection";
+// Blog detail page component
 export default function BlogDetailPage({
   params,
 }: {
   params: { slug: string };
 }) {
   const { slug } = params;
-
+  
+  // Find the blog post by slug
   const blogPost = blogPosts.find((post) => post.slug === slug);
 
+  // Show 404 if post is not found
   if (!blogPost) {
-    notFound();
+    notFound();  // Ensure this is properly imported
   }
 
   return (
@@ -1784,6 +1787,8 @@ export default function BlogDetailPage({
                 key={index}
                 src={section.src}
                 alt={section.alt}
+                width={800} // Define width and height for the Image component
+                height={500}
                 className="w-full h-auto"
               />
             );
