@@ -1748,7 +1748,7 @@ Solution: Share your goals with a friend, mentor, or accountability partner who 
   // Add more blog posts as needed
 ];
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return blogPosts.map((post) => ({
     slug: post.slug,
   }));
