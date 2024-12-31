@@ -1787,8 +1787,7 @@ export default function BlogDetailPage({
                 key={index}
                 src={section.src}
                 alt={section.alt}
-                width={800} // Define width and height for the Image component
-                height={500}
+               
                 className="w-full h-auto"
               />
             );
