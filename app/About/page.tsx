@@ -219,8 +219,8 @@ const AboutPage = () => {
         </h3>
         <div className="space-y-4 text-center">
           <blockquote className="italic text-gray-600">
-            "Health Counseling Hub changed my life! I feel more balanced and
-            happier than ever."
+            &quot;Health Counseling Hub changed my life! I feel more balanced and
+            happier than ever.&quot;
           </blockquote>
           <p className="text-sm text-gray-400">- Sarah, Client</p>
         </div>

@@ -103,7 +103,7 @@ const Contact = () => {
         </form>
         
         <p className="text-gray-600 text-center mt-6">
-          We believe that every interaction is an opportunity to build a meaningful connection. Your questions and feedback matter to us, and we are committed to providing you with the best possible support. Whether you're seeking advice or simply want to reach out, we&apos;re here to listen and assist you in any way we can. Let&apos;s work together to create a healthier, happier future.
+          We believe that every interaction is an opportunity to build a meaningful connection. Your questions and feedback matter to us, and we are committed to providing you with the best possible support. Whether you&apos;re seeking advice or simply want to reach out, we&apos;re here to listen and assist you in any way we can. Let&apos;s work together to create a healthier, happier future.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-6 rounded-lg max-w-full mt-6">
