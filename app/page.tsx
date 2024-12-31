@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 
 
@@ -52,7 +53,7 @@ const HomePage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
           {posts.map((post) => (
             <div key={post.id} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
-              <img
+              <Image
                 src={post.image}
                 alt={post.title}
                 className="w-full h-48 object-cover rounded-lg mb-4"

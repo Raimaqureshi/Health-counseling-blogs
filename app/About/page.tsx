@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from "next/image";
 
 const AboutPage = () => {
@@ -9,7 +10,7 @@ const AboutPage = () => {
         </h1>
         <p className="text-lg text-gray-600">
           Your journey to a healthier, more balanced life starts here. Whether
-          it’s mental well-being, physical health, or finding inner peace, we’re
+          it&apos;s mental well-being, physical health, or finding inner peace, we&apos;re
           here to guide you every step of the way.
         </p>
       </div>

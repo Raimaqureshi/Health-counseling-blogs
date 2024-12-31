@@ -8,11 +8,8 @@ interface Comment {
   timestamp: Date;
 }
 
-interface CommentSectionProps {
-  postId?: number;
-}
 
-export default function CommentSection({ postId }: CommentSectionProps) {
+export default function CommentSection() {
   const [comments, setComments] = useState<Comment[]>([]);
   const [newComment, setNewComment] = useState("");
 

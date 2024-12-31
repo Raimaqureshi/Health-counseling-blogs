@@ -21,7 +21,7 @@ const FAQPage = () => {
         Do you offer online consultations?
       </h4>
       <p className="text-gray-600">
-        Yes, we offer virtual counseling sessions for your convenience. You can book your session through our website's contact page.
+        Yes, we offer virtual counseling sessions for your convenience. You can book your session through our website&apos;s contact page.
       </p>
     </div>
     {/* Question 3 */}
@@ -48,7 +48,7 @@ const FAQPage = () => {
         How can I book a session?
       </h4>
       <p className="text-gray-600">
-        You can book a session by visiting our <a href="/contact" className="text-blue-600 underline">Contact Us</a> page or reaching out to us via email or phone. We’ll guide you through the process.
+        You can book a session by visiting our <a href="/contact" className="text-blue-600 underline">Contact Us</a> page or reaching out to us via email or phone. We&apos;ll guide you through the process.
       </p>
     </div>
   </div>

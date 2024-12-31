@@ -1752,6 +1752,7 @@ export function generateStaticParams() {
   }));
 }
 
+import Image from "next/image";
 import CommentSection from "@/components/CommentSection";
 export default function BlogDetailPage({
   params,
@@ -1779,7 +1780,7 @@ export default function BlogDetailPage({
             );
           case "image":
             return (
-              <img
+              <Image
                 key={index}
                 src={section.src}
                 alt={section.alt}
