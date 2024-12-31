@@ -1811,8 +1811,7 @@ export default function BlogDetailPage({
             return null;
         }
       })}
-<CommentSection />
-
+      <CommentSection />
     </div>
   );
 }
