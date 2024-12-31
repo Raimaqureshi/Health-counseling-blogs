@@ -87,7 +87,7 @@ const blogPosts = [
   },
   {
     id: 13,
-    slug: "Mindful-Eating:-How-to-Build-a-Healthy-Relationship-with-Food",
+    slug: "Mindful-Eating-How-to-Build-a-Healthy-Relationship-with-Food",
     title: "Mindful Eating: How to Build a Healthy Relationship with Food",
     excerpt: "Mindful eating helps you develop a healthier relationship with food by focusing on the present moment and listening to your body’s hunger cues. Learn how this practice can improve digestion, reduce overeating, and enhance your overall well-being.",
     image: "/images/food-relation.jpg"

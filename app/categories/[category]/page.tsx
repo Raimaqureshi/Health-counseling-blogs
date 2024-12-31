@@ -1,5 +1,3 @@
-
-
 const CategoryPage = ({ params }: { params: { category: string } }) => {
   const category = params.category;
 

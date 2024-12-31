@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 
+
 const HomePage = () => {
   const posts = [
     {
@@ -33,9 +34,10 @@ const HomePage = () => {
   ];
 
   return (
+    
     <div>
       <section className="bg-gray-50 py-16 text-center">
-        <h1 className="text-4xl font-bold mb-4 sm:text-5xl">Welcome to Our Health Blog</h1>
+        <h1 className="text-4xl font-bold mb-4 sm:text-5xl mt-8">Welcome to Our Health Blog</h1>
         <p className="text-xl text-center mb-6 sm:text-xl">Welcome to our Health Blog, your trusted partner in achieving a happier, healthier lifestyle. From expert tips on fitness and nutrition to insights into mental well-being and self-care, we bring you the knowledge and inspiration you need to transform your life. Dive in, explore our articles, and let’s embark on this journey to wellness together!</p>
         <a
           href="/blogs"
@@ -89,6 +91,24 @@ const HomePage = () => {
           Learn More About Us
         </a>
       </section>
+      <section className="py-16 bg-white text-center">
+  <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
+  <p className="text-xl mb-6">Subscribe to our newsletter for the latest health tips.</p>
+  <form className="max-w-lg mx-auto flex items-center">
+    <input
+      type="email"
+      placeholder="Enter your email"
+      className="w-full p-2 border border-gray-300 rounded-l-lg"
+    />
+    <button
+      type="submit"
+      className="bg-lime-400 text-black px-4 py-2 rounded-r-lg hover:bg-lime-500 transition"
+    >
+      Subscribe
+    </button>
+  </form>
+</section>
+
     </div>
   );
 };

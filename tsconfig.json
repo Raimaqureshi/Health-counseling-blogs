@@ -32,6 +32,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "app/**/*", "types/**/*",
     ".next/types/**/*.ts"
   ],
   "exclude": [
