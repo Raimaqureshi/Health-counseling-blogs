@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="text-center bg-lime-900 py-2">
+      <div className="text-center bg-lime-700 py-2">
         <p>
           &copy; {new Date().getFullYear()} Wellness Tips. All rights reserved.
         </p>

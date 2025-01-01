@@ -42,7 +42,7 @@ const HomePage = () => {
         <p className="text-xl text-center mb-6 sm:text-xl">Welcome to our Health Blog, your trusted partner in achieving a happier, healthier lifestyle. From expert tips on fitness and nutrition to insights into mental well-being and self-care, we bring you the knowledge and inspiration you need to transform your life. Dive in, explore our articles, and let’s embark on this journey to wellness together!</p>
         <a
           href="/blogs"
-          className="bg-lime-400 text-black py-2 px-6 rounded-full text-lg font-semibold hover:bg-lime-500 transition"
+          className="bg-black text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-gray-900 transition"
         >
           Read Our Latest Blog
         </a>
@@ -90,7 +90,7 @@ const HomePage = () => {
         <p className="text-xl mb-6">
           We are passionate about health and wellness. Our goal is to provide valuable information and tips to help you lead a healthy and fulfilling life.
         </p>
-        <a href="/About" className="bg-lime-400 text-black py-2 px-6 rounded-full text-lg font-semibold hover:bg-lime-500 transition">
+        <a href="/About" className="bg-black text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-gray-900 transition">
           Learn More About Us
         </a>
       </section>
@@ -105,7 +105,7 @@ const HomePage = () => {
     />
     <button
       type="submit"
-      className="bg-lime-400 text-black px-4 py-2 rounded-r-lg hover:bg-lime-500 transition"
+      className="bg-black text-white px-4 py-2 rounded-r-lg hover:bg-black-900 transition"
     >
       Subscribe
     </button>
