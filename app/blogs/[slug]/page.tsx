@@ -1,7 +1,4 @@
-import { notFound } from "next/navigation";
-import Image from "next/image";
-import CommentSection from "@/components/CommentSection";
-
+import CommentSection from "components/CommentSection";
 type ContentSection =
   | { type: "paragraph"; text: string }
   | { type: "image"; src: string; alt: string }
@@ -1755,19 +1752,22 @@ export async function generateStaticParams() {
 }
 
 // Blog detail page component
-export default function BlogDetailPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+
+import Image from "next/image";
+import { notFound } from "next/navigation";
+
+interface Params {
+  slug: string;
+}
+
+export default function BlogDetailPage({ params }: { params: Params }) {
   const { slug } = params;
-  
-  // Find the blog post by slug
+
+  // Find the blog post
   const blogPost = blogPosts.find((post) => post.slug === slug);
 
-  // Show 404 if post is not found
   if (!blogPost) {
-    notFound();  // Ensure this is properly imported
+    notFound();
   }
 
   return (
@@ -1787,7 +1787,8 @@ export default function BlogDetailPage({
                 key={index}
                 src={section.src}
                 alt={section.alt}
-               
+                width={800}
+                height={600}
                 className="w-full h-auto"
               />
             );
@@ -1815,7 +1816,7 @@ export default function BlogDetailPage({
             return null;
         }
       })}
-      <CommentSection />
+      < CommentSection />
     </div>
   );
 }

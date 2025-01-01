@@ -187,7 +187,11 @@ export default function BlogsPage() {
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
         {blogPosts.map((post) => (
           <li key={post.id} className="border p-4 rounded-lg shadow-md w-full md:w-80">
-            <Image src={post.image} alt={post.title} className="w-full h-64 object-cover mb-4 rounded" />
+            <Image src={post.image}
+             alt={post.title}
+             width={320} 
+              height={200}
+             className="w-full h-64 object-cover mb-4 rounded" />
             <h2 className="text-2xl font-semibold mb-2">{post.title}</h2>
             <p className="text-gray-700 mb-4">{post.excerpt}</p>
             <Link href={`/blogs/${post.slug}`} className="text-blue-600 hover:underline">
