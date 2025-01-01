@@ -56,6 +56,8 @@ const HomePage = () => {
               <Image
                 src={post.image}
                 alt={post.title}
+                width={500}
+                height={400}
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">{post.title}</h3>

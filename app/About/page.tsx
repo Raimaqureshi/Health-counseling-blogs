@@ -16,28 +16,16 @@ const AboutPage = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center text-center min-h-screen">
-        <div className="lg:max-w-7xl xs:max-w-lg sm:max-w2xl mx-auto text-center py-10 px-4 md:px-20 space-y-12">
+        <div className="lg:max-w-7xl xs:max-w-lg sm:max-w2xl mx-auto text-center py-10 px-4 md:px-20 space-y-6">
           <h2 className="w-4xl text-3xl font-bold text-center text-gray-800">
             Our Story
           </h2>
-          <p className="text-center text-gray-600 max-w-2xl mx-auto">
-            Welcome to Health Counseling Hub, your partner in achieving a
-            balanced and healthier life through personalized wellness
-            counseling. Our heartfelt dedication is here to guide you every step
+          <p className="text-center text-gray-600 max-w-2xl mx-auto">Our heartfelt dedication is here to guide you every step
             of the way on this journey.
           </p>
 
           <div className="grid grid-cols-1 gap-8">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="flex-shrink-0">
-                <Image
-                  src="/images/story10.jpg"
-                  alt="Inspiring Transformations Story"
-                  width={400}
-                  height={300}
-                  className="rounded-lg object-cover shadow-lg"
-                />
-              </div>
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-gray-800">
                   Our Core Belief
